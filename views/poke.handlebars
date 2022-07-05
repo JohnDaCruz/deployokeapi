@@ -1,0 +1,16 @@
+<link rel="stylesheet" href="stylesheets/poke.css">
+<div id="landscape">
+
+    <a href="/"><img id="imgPokemon" src=".\images\logo.png"></a>
+
+    <form action="/pokemon" method="post">
+        <input name="search" id="search" type="text" placeholder="Pesquise aqui..">
+    </form>
+</div>
+
+<div id="boxPai">
+    <div id="box">
+        <img src="{{response.sprites.front_default}}">
+        <h1> {{response.name}}</h1>
+    </div>
+</div>
